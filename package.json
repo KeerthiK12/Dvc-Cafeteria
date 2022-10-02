@@ -1,0 +1,19 @@
+{
+  "name": "dvc-cafeteria",
+  "version": "1.0.0",
+  "description": "Team-2 project bracket ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KeerthiK12/Dvc-Cafeteria.git"
+  },
+  "author": "team2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KeerthiK12/Dvc-Cafeteria/issues"
+  },
+  "homepage": "https://github.com/KeerthiK12/Dvc-Cafeteria#readme"
+}
