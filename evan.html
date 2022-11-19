@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.cdnfonts.com/css/inder" rel="stylesheet">
+                
+</head>
+<style>
+  #survey-form{
+    background-color: white;
+    text-align: center;
+  }
+  label{   
+    display: block;
+
+}
+  input{
+    width: 100%;
+    min-height: 2em;
+    margin: 10px 0 0 0;
+    background-color:#e8e8e8;
+    border: none;
+  }
+  #submit{
+    width: 15%;
+  }
+  body{
+    margin: 15% 15%;
+    height: 50%;
+    width: 70%;
+    color:black;
+    font-family: 'Inder', sans-serif;
+    
+  }
+  #title{
+    color:white;
+    -webkit-text-stroke: 0.2px black;
+    text-align: center;
+    margin: 0;
+  }
+  fieldset{
+    border: none;
+    
+  }
+  form {
+  width: 60vw;
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  padding-bottom: 2em;
+}
+  #input{
+  margin: 20px 50px 0;
+}
+#submit{
+  margin: 25px 20px 0;
+}
+html{
+  background: url('backgroundimage.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+#logo{
+
+
+width: 87px;
+height: 80px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+
+}
+
+</style>
+<body>
+  <img id ='logo'src="logo.png">
+  <h1 id='title'>Admin Login</h1>
+  <form id='survey-form' action='' >
+    <fieldset>
+      <div id="input">
+      <label class='inline'id='email-label'>Email:<input id='name' placeholder='Enter your email'type='email'required/>
+      </label>
+      <label class='inline'id='password-label'>Password:<input id='email' placeholder='Enter your password (minimum 8 characters)'type="password" pattern="[a-z0-9]{8,}" required/>
+      </label>
+      </div>
+      <input type="submit" value="Log in" id="submit">
+    </fieldset>
+  </form>
+
+
+</body>
+
+
+
+</html>
