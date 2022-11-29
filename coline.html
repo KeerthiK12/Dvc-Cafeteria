@@ -1,1 +1,110 @@
 <!-- Coline's html file -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div{}
+
+.navigationBar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #007550e7;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+}
+
+.navigationBar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.navigationBar a:hover {
+  color: #b4b0b1;
+}
+
+.navigationBar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+</style>
+</head>
+<body>
+
+<div id="myNavigationBar" class="navigationBar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Menu</a>
+  <a href="#">Review</a>
+  <a href="#">About Us</a>
+  <a href="#">Contact Us</a>
+</div>
+
+<span style="font-size:60px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+
+<!--Log In button-->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+    
+.button { /*button class*/
+  background-color: #007550; 
+  border: none;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: right;
+}
+
+.buttonLogIn {border-radius: 8px;} /* gives the button rounder edges */
+
+.buttonLogIn:hover { /* hovering over the button will make it change color */
+  color: #b4b0b1;
+}
+
+</style>
+</head>
+<body>
+
+<button class="button buttonLogIn">Log In</button>
+
+
+</body>
+</html>
+
+
+<script>
+function openNav() {
+  document.getElementById("myNavigationBar").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("myNavigationBar").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 
+
