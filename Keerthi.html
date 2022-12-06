@@ -1,0 +1,27 @@
+<IconContext.Provider >
+    <div classname="styles.navbar ">
+      <Link to="#" className={styles.menuBars}>
+        <FaIcons.FaBars onClick={showSidebar} />
+      </Link>
+      <Link to="/" className={styles.logo}>
+        <h3 >Reach For The Stars</h3>
+      </Link>
+    </div>
+    <nav>
+      <ul className={styles.navMenuItems} onClick={showSidebar}>
+        <li className={styles.navbarToggle}>
+          <Link to="#" className={styles.menuBars}>
+           
+          </Link>
+        </li>
+       
+            <li key={index} className={item.cName}>
+              <Link to={item.path}>
+                <span className={styles.span}>{item.title}</span>
+              </Link>
+            </li>
+          
+        })}
+      </ul>
+    </nav>
+  </IconContext.Provider>
