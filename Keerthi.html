@@ -1,27 +1,146 @@
-<IconContext.Provider >
-    <div classname="styles.navbar ">
-      <Link to="#" className={styles.menuBars}>
-        <FaIcons.FaBars onClick={showSidebar} />
-      </Link>
-      <Link to="/" className={styles.logo}>
-        <h3 >Reach For The Stars</h3>
-      </Link>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  background-image: url("background1.jpeg");
+width: 100%;
+height: 600px;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+text-align:center;
+margin:auto;
+padding:0;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+#center{
+    height: 100px;
+}
+  #logo {
+
+  background-image: url("logo.png");
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+width: 100px;
+height: 100px;
+
+background-position: center center;
+  border-radius: 50%;
+  display: inline-block;
+    }
+    #center{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        
+        padding:5px;
+    }
+    #text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        color:white;
+    }
+
+    .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  
+  background-color: #D9C03D;
+  opacity: 0.9;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color:white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">Menu</a>
+    <a href="#">Review</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+  </div>
+</div>
+    </style>
+</head>
+<body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">Menu</a>
+          <a href="#">Review</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+      <span style="font-size:70px;cursor:pointer; color:white;position:absolute;top:10px;left:20px;" onclick="openNav()">&#9776;</span>
+    <div id="center">
+        <div id= "logo"></div>
+        <div id = "text"><h1>DVC Cafe</h1></div>
     </div>
-    <nav>
-      <ul className={styles.navMenuItems} onClick={showSidebar}>
-        <li className={styles.navbarToggle}>
-          <Link to="#" className={styles.menuBars}>
-           
-          </Link>
-        </li>
-       
-            <li key={index} className={item.cName}>
-              <Link to={item.path}>
-                <span className={styles.span}>{item.title}</span>
-              </Link>
-            </li>
-          
-        })}
-      </ul>
-    </nav>
-  </IconContext.Provider>
+
+
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "30%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
+</body> 
+</html>
